@@ -29,16 +29,6 @@ const NavBar = ({ page, setPage }) => {
             alt="Ammar E-Commerce"
             className="h-14 w-auto object-contain"
           />
-
-          <div className="text-left leading-none">
-            <div className="ae-display text-lg">
-              AMMAR
-            </div>
-
-            <div className="ae-mono text-[10px] tracking-widest ae-text-orange">
-              E-COMMERCE
-            </div>
-          </div>
         </button>
 
 
