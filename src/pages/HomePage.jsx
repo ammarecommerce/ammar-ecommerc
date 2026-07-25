@@ -13,7 +13,7 @@ import { SERVICES, CASE_STUDIES, TESTIMONIALS, FAQS } from "../data/constants";
 const HomePage = ({ setPage }) => (
   <PageShell>
     {/* HERO */}
-    <section className="grid md:grid-cols-2 gap-12 items-center">
+    <section className="grid md:grid-cols-2 gap-12 items-center -mt-10">
       <div>
         <SectionEyebrow><Sparkles size={12}/> Amazon &amp; Company Formation Experts</SectionEyebrow>
         <h1 className="ae-display text-4xl md:text-6xl mb-6">
@@ -24,14 +24,20 @@ const HomePage = ({ setPage }) => (
           fully compliant LLC or LTD companies - formation, tax, banking and
           store management, handled by one team.
         </p>
-        <div className="flex flex-wrap gap-4">
-          <PrimaryButton onClick={() => setPage("contact")}>
-            Start Your Company <ArrowRight size={16} />
-          </PrimaryButton>
-          <OutlineButton onClick={() => setPage("services")}>
-            View All Services
-          </OutlineButton>
-        </div>
+        <div className="flex gap-2 w-full">
+       <PrimaryButton
+         onClick={() => setPage("contact")}
+         className="flex-1 min-w-0"
+         >
+          Start Company <ArrowRight size={16} />
+         </PrimaryButton>
+          <OutlineButton
+          onClick={() => setPage("services")}
+         className="flex-1 min-w-0"
+         >
+        View All Services
+        </OutlineButton>
+    </div>
         <div className="flex gap-8 mt-10">
           <div>
             <div className="ae-display text-2xl ae-text-orange">700+</div>
@@ -133,12 +139,21 @@ const HomePage = ({ setPage }) => (
           Compare our US LLC and UK LTD packages, see exactly what's included,
           and pick the state that fits your business.
         </p>
-        <div className="flex flex-wrap gap-4">
-          <PrimaryButton onClick={() => setPage("llc")}>LLC Packages</PrimaryButton>
-          <OutlineButton onClick={() => setPage("ltd")} className="!border-white !text-white hover:!bg-white hover:!text-[var(--navy)]">
-            LTD Packages
-          </OutlineButton>
-        </div>
+        <div className="flex gap-2 w-full">
+  <PrimaryButton
+    onClick={() => setPage("llc")}
+    className="flex-1 min-w-0"
+  >
+   LLC Packages
+  </PrimaryButton>
+
+  <OutlineButton
+    onClick={() => setPage("ltd")}
+    className="flex-1 min-w-0 !border-white !text-white hover:!bg-white hover:!text-[var(--navy)]"
+  >
+    LTD Packages
+  </OutlineButton>
+</div>
       </div>
       <div className="grid grid-cols-2 gap-4">
         {["Wyoming", "Delaware", "New Mexico", "Florida", "Texas", "UK"].map((s) => (
