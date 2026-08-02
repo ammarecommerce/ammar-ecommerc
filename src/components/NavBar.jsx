@@ -4,7 +4,7 @@ import { NAV_ITEMS } from "../data/constants";
 import { PrimaryButton } from "./UI";
 
 /* ------------------------------------------------------------------ */
-/* NAVIGATION                                                          */
+/* NAVIGATION                                                         */
 /* ------------------------------------------------------------------ */
 
 const NavBar = ({ page, setPage }) => {
@@ -17,6 +17,21 @@ const NavBar = ({ page, setPage }) => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b ae-border-line">
+      
+      {/* TOP ANNOUNCEMENT BAR (MATCHED WITH FOOTER NAVY BG) */}
+      <div className="ae-bg-navy text-white text-sm md:text-base py-2.5 px-4 flex items-center justify-center gap-3 md:gap-4 font-semibold text-center border-b border-white/10">
+        <span className="tracking-wide">Join our free group to learn</span>
+        
+        <a
+          href="https://chat.whatsapp.com/LblCy5nt4Fd9Omg39aViqm" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm px-4 py-1.5 rounded-full font-bold transition-all duration-300 shadow-md hover:shadow-orange-500/30 hover:scale-105 inline-block active:scale-95"
+        >
+          Join Group
+        </a>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
 
         {/* LOGO / BRAND */}
@@ -49,14 +64,14 @@ const NavBar = ({ page, setPage }) => {
 
 
         {/* BOOK A CALL BUTTON */}
-<div className="hidden md:block">
-  <PrimaryButton 
-    onClick={() => window.open("https://wa.me/923340607521?text=Hi,%20I%20want%20to%20book%20a%20call", "_blank")}
-  >
-    Book a Call
-    <ArrowRight size={16} />
-  </PrimaryButton>
-</div>
+        <div className="hidden md:block">
+          <PrimaryButton 
+            onClick={() => window.open("https://wa.me/923340607521?text=Hi,%20I%20want%20to%20book%20a%20call", "_blank")}
+          >
+            Book a Call
+            <ArrowRight size={16} />
+          </PrimaryButton>
+        </div>
 
 
         {/* MOBILE MENU BUTTON */}
