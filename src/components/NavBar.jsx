@@ -20,7 +20,7 @@ const NavBar = ({ page, setPage }) => {
       
       {/* TOP ANNOUNCEMENT BAR (MATCHED WITH FOOTER NAVY BG) */}
       <div className="ae-bg-navy text-white text-sm md:text-base py-2.5 px-4 flex items-center justify-center gap-3 md:gap-4 font-semibold text-center border-b border-white/10">
-        <span className="tracking-wide">Join our free group to learn</span>
+        <span className="tracking-wide">Join Our Free Group To Learn</span>
         
         <a
           href="https://chat.whatsapp.com/LblCy5nt4Fd9Omg39aViqm" 
