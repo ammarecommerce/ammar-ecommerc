@@ -49,12 +49,14 @@ const NavBar = ({ page, setPage }) => {
 
 
         {/* BOOK A CALL BUTTON */}
-        <div className="hidden md:block">
-          <PrimaryButton onClick={() => goToPage("contact")}>
-            Book a Call
-            <ArrowRight size={16} />
-          </PrimaryButton>
-        </div>
+<div className="hidden md:block">
+  <PrimaryButton 
+    onClick={() => window.open("https://wa.me/923340607521?text=Hi,%20I%20want%20to%20book%20a%20call", "_blank")}
+  >
+    Book a Call
+    <ArrowRight size={16} />
+  </PrimaryButton>
+</div>
 
 
         {/* MOBILE MENU BUTTON */}
