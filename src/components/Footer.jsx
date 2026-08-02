@@ -22,24 +22,27 @@ const Footer = ({ setPage }) => (
           Muhammad Ammar Hassan for entrepreneurs who want to sell globally.
         </p>
       </div>
-      <div>
-        <div className="ae-mono text-xs tracking-widest text-white/50 mb-3">SERVICES</div>
-        <ul className="space-y-2 text-sm text-white/80">
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">Amazon Seller Course</button></li>
-          <li><button onClick={() => setPage("llc")} className="hover:text-white text-left">LLC Formation (USA)</button></li>
-          <li><button onClick={() => setPage("ltd")} className="hover:text-white text-left">LTD Formation (UK)</button></li>
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">Website Designing</button></li>
-        </ul>
-      </div>
-      <div>
-        <div className="ae-mono text-xs tracking-widest text-white/50 mb-3">MORE</div>
-        <ul className="space-y-2 text-sm text-white/80">
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">ITIN Filing</button></li>
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">Tax Return Filing</button></li>
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">Business Bank Setup</button></li>
-          <li><button onClick={() => setPage("services")} className="hover:text-white text-left">Amazon Store Handling</button></li>
-        </ul>
-      </div>
+      {/* SERVICES COLUMN */}
+<div>
+  <div className="ae-mono text-xs tracking-widest text-white/50 mb-3">SERVICES</div>
+  <ul className="space-y-2 text-sm text-white/80">
+    <li><button onClick={() => setPage("amazon-course")} className="hover:text-white text-left cursor-pointer">Amazon Seller Course</button></li>
+    <li><button onClick={() => setPage("llc")} className="hover:text-white text-left cursor-pointer">LLC Formation (USA)</button></li>
+    <li><button onClick={() => setPage("ltd")} className="hover:text-white text-left cursor-pointer">LTD Formation (UK)</button></li>
+    <li><button onClick={() => setPage("website-design")} className="hover:text-white text-left cursor-pointer">Website Designing</button></li>
+  </ul>
+</div>
+
+{/* MORE COLUMN */}
+<div>
+  <div className="ae-mono text-xs tracking-widest text-white/50 mb-3">MORE</div>
+  <ul className="space-y-2 text-sm text-white/80">
+    <li><button onClick={() => setPage("itin")} className="hover:text-white text-left cursor-pointer">ITIN Filing</button></li>
+    <li><button onClick={() => setPage("tax-filing")} className="hover:text-white text-left cursor-pointer">Tax Return Filing</button></li>
+    <li><button onClick={() => setPage("bank-setup")} className="hover:text-white text-left cursor-pointer">Business Bank Setup</button></li>
+    <li><button onClick={() => setPage("store-handling")} className="hover:text-white text-left cursor-pointer">Amazon Store Handling</button></li>
+  </ul>
+</div>
       <div>
         <div className="ae-mono text-xs tracking-widest text-white/50 mb-3">CONTACT</div>
         <ul className="space-y-3 text-sm text-white/80 mb-5">

@@ -45,7 +45,7 @@ const HomePage = ({ setPage }) => (
           </div>
           <div>
             <div className="ae-display text-2xl ae-text-orange">2</div>
-            <div className="text-xs ae-text-steel">Countries — US &amp; UK</div>
+            <div className="text-xs ae-text-steel">Countries - US &amp; UK</div>
           </div>
           <div>
             <div className="ae-display text-2xl ae-text-orange">1:1</div>
@@ -116,17 +116,32 @@ const HomePage = ({ setPage }) => (
       <h2 className="ae-display text-3xl mb-10">Everything to launch and run your business</h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         {SERVICES.slice(0, 6).map((s, i) => (
-          <div key={i} className="ae-card rounded-xl p-6">
-            <s.icon className="ae-text-orange mb-4" size={26} />
-            <div className="font-bold mb-1">{s.title}</div>
-            <p className="text-sm ae-text-steel">{s.desc}</p>
+          <div
+            key={i}
+            onClick={() => s.pageKey && setPage(s.pageKey)}
+            className="ae-card rounded-xl p-6 flex flex-col justify-between hover:shadow-md transition-all duration-300 cursor-pointer group"
+          >
+            <div>
+              <s.icon className="ae-text-orange mb-4 group-hover:scale-110 transition-transform" size={26} />
+              <div className="font-bold mb-1 text-slate-900">{s.title}</div>
+              <p className="text-sm ae-text-steel mb-4">{s.desc}</p>
+            </div>
+
+            <div className="flex items-center gap-1.5 text-xs font-bold text-orange-600 group-hover:text-orange-700 transition-colors pt-2 border-t border-slate-100">
+              <span>View Details</span>
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </div>
           </div>
         ))}
       </div>
       <div className="mt-8">
-        <OutlineButton onClick={() => setPage("services")}>
-          See all 9 services <ChevronRight size={16}/>
-        </OutlineButton>
+        <button
+          onClick={() => setPage("services")}
+          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all inline-flex items-center gap-2 cursor-pointer shadow-md"
+        >
+          View All Services
+          <ArrowRight size={18} />
+        </button>
       </div>
     </section>
 

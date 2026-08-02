@@ -26,8 +26,7 @@ const NavBar = ({ page, setPage }) => {
           href="https://chat.whatsapp.com/LblCy5nt4Fd9Omg39aViqm" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm px-4 py-1.5 rounded-full font-bold transition-all duration-300 shadow-md hover:shadow-orange-500/30 hover:scale-105 inline-block active:scale-95"
-        >
+          className="ae-btn-primary font-bold px-4 py-1.5 rounded-full transition-all duration-300 shadow-md hover:scale-105 inline-flex items-center gap-1.5 text-xs md:text-sm cursor-pointer"        >
           Join Group
         </a>
       </div>

@@ -21,15 +21,60 @@ export const NAV_ITEMS = [
 ];
 
 export const SERVICES = [
-  { icon: GraduationCap, title: "Amazon Seller Course", desc: "Step-by-step training on Amazon FBA, Account management And wholesale - from product research to your first sale." },
-  { icon: Building2, title: "LLC Formation (USA)", desc: "Full setup of your US Limited Liability Company in any state, done for you from start to finish." },
-  { icon: Globe, title: "LTD Formation (UK)", desc: "Register your UK Limited company with Companies House, registered office included." },
-  { icon: FileText, title: "Website Designing", desc: "Modern, conversion-ready websites for your brand or e-commerce store, built to match your business." },
-  { icon: ClipboardCheck, title: "ITIN Filing", desc: "Complete assistance applying for your Individual Taxpayer Identification Number with the IRS." },
-  { icon: Landmark, title: "Tax Return Filing", desc: "Federal and state tax return preparation for LLC owners - annual filings handled correctly and on time." },
-  { icon: CreditCard, title: "Business Bank Account Setup", desc: "Guided setup of a US business bank account for your LLC, matched to your situation." },
-  { icon: ShoppingCart, title: "Amazon Account Creation", desc: "New Amazon seller account setup and verification, done right the first time." },
-  { icon: Store, title: "Amazon Store Handling", desc: "Ongoing account management - listings, Hunting, inventory and customer service, fully managed." },
+  { 
+    icon: GraduationCap, 
+    title: "Amazon Seller Course", 
+    desc: "Step-by-step training on Amazon FBA, Account management And wholesale - from product research to your first sale.",
+    pageKey: "amazon-course" // <-- Ye line add karein
+  },
+  { 
+    icon: Building2, 
+    title: "LLC Formation (USA)", 
+    desc: "Full setup of your US Limited Liability Company in any state, done for you from start to finish.",
+    pageKey: "llc" // <-- Ye line add karein
+  },
+  { 
+    icon: Globe, 
+    title: "LTD Formation (UK)", 
+    desc: "Register your UK Limited company with Companies House, registered office included.",
+    pageKey: "ltd" // <-- Ye line add karein
+  },
+  { 
+    icon: FileText, 
+    title: "Website Designing", 
+    desc: "Modern, conversion-ready websites for your brand or e-commerce store, built to match your business.",
+    pageKey: "website-design" // <-- Ye line add karein
+  },
+  { 
+    icon: ClipboardCheck, 
+    title: "ITIN Filing", 
+    desc: "Complete assistance applying for your Individual Taxpayer Identification Number with the IRS.",
+    pageKey: "itin" // <-- Ye line add karein
+  },
+  { 
+    icon: Landmark, 
+    title: "Tax Return Filing", 
+    desc: "Federal and state tax return preparation for LLC owners - annual filings handled correctly and on time.",
+    pageKey: "tax-filing" // <-- Ye line add karein
+  },
+  { 
+    icon: CreditCard, 
+    title: "Business Bank Account Setup", 
+    desc: "Guided setup of a US business bank account for your LLC, matched to your situation.",
+    pageKey: "bank-setup" // <-- Ye line add karein
+  },
+  { 
+    icon: ShoppingCart, 
+    title: "Amazon Account Creation", 
+    desc: "New Amazon seller account setup and verification, done right the first time.",
+    pageKey: "amazon-account" // <-- Ye line add karein
+  },
+  { 
+    icon: Store, 
+    title: "Amazon Store Handling", 
+    desc: "Ongoing account management - listings, Hunting, inventory and customer service, fully managed.",
+    pageKey: "store-handling" // <-- Ye line add karein
+  },
 ];
 
 export const LLC_PLANS = [
@@ -41,7 +86,7 @@ export const LLC_PLANS = [
     features: [
       "State Filing (Articles of Organization)",
       "EIN (Employer Identification Number)",
-      "Registered Agent — 1 year included",
+      "Registered Agent - 1 year included",
       "Business Bank Account Setup",
       "BOI (Beneficial Ownership Information) filing",
       "Life Time Support",
@@ -87,8 +132,8 @@ export const LLC_PACKAGES = [
     price: "$699",
     priceNote: "Complete Package",
     features: [
-      "Registered Agent — 1 Year",
-      "Business Address — 1 Year",
+      "Registered Agent - 1 Year",
+      "Business Address - 1 Year",
       "LLC Formation + Articles of Organization",
       "EIN (Employer Identification Number)",
       "Reseller Certificate",
@@ -106,8 +151,8 @@ export const LLC_PACKAGES = [
     price: "$499",
     priceNote: "Complete Package",
     features: [
-      "Registered Agent — 1 Year",
-      "Business Address — 1 Year",
+      "Registered Agent - 1 Year",
+      "Business Address - 1 Year",
       "LLC Formation + Articles of Organization",
       "EIN (Employer Identification Number)",
       "Reseller Certificate",
@@ -125,8 +170,8 @@ export const LLC_PACKAGES = [
     price: "$399",
     priceNote: "Complete Package",
     features: [
-      "Registered Agent — 1 Year",
-      "Business Address — 1 Year",
+      "Registered Agent - 1 Year",
+      "Business Address - 1 Year",
       "LLC Formation + Articles of Organization",
       "EIN (Employer Identification Number)",
       "Reseller Certificate",
@@ -146,7 +191,7 @@ export const LTD_PACKAGES = [
     priceNote: "+ Companies House fee",
     features: [
       "Companies House Registration",
-      "Registered Office Address — 1 year",
+      "Registered Office Address - 1 year",
       "Certificate of Incorporation",
       "Director Identity Verification",
       "Memorandum & Articles of Association",
@@ -185,9 +230,9 @@ export const LTD_PACKAGES = [
 export const STATES = [
   { state: "Wyoming", fee: "$100", annual: "$60/yr (min. license tax)", privacy: "Strong", bestFor: "Privacy, asset protection, non-residents", speed: "Instant online / up to 15 days by mail" },
   { state: "Delaware", fee: "$90", annual: "$300/yr flat franchise tax", privacy: "Good", bestFor: "Startups seeking investors, credibility", speed: "Same/next-day expedited available" },
-  { state: "New Mexico", fee: "$50", annual: "$0 — no annual report", privacy: "Strongest", bestFor: "Lowest long-term cost, maximum privacy", speed: "1–3 business days online" },
+  { state: "New Mexico", fee: "$50", annual: "$0 - no annual report", privacy: "Strongest", bestFor: "Lowest long-term cost, maximum privacy", speed: "1-3 business days online" },
   { state: "Florida", fee: "$125", annual: "$138.75/yr annual report", privacy: "Moderate", bestFor: "Businesses physically operating in Florida", speed: "~5 business days online" },
-  { state: "Texas", fee: "$300", annual: "$0 due if under revenue threshold*", privacy: "Moderate", bestFor: "Businesses operating in Texas", speed: "2–5 business days online" },
+  { state: "Texas", fee: "$300", annual: "$0 due if under revenue threshold*", privacy: "Moderate", bestFor: "Businesses operating in Texas", speed: "2-5 business days online" },
 ];
 
 /* Sample placeholder content — swap these for your real client
