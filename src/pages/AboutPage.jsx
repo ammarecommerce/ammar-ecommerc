@@ -7,12 +7,14 @@ import FadeIn from "../components/FadeIn";
 /*  ABOUT PAGE                                                        */
 /* ------------------------------------------------------------------ */
 const AboutPage = () => (
-  <PageShell>
+ <div className="max-w-5xl mx-auto px-6 pt-6 pb-6">
     <FadeIn direction="up" delay={0.1}>
-      <SectionEyebrow>About Us</SectionEyebrow>
+      <div className="mb-2">
+        <SectionEyebrow>About Us</SectionEyebrow>
+      </div>
     </FadeIn>
 
-    <div className="grid md:grid-cols-3 gap-12">
+    <div className="grid md:grid-cols-3 gap-6">
       {/* Left Column: Biography & Intro */}
       <FadeIn direction="right" delay={0.2} className="md:col-span-2">
         <div>
@@ -68,7 +70,7 @@ const AboutPage = () => (
         </FadeIn>
       </div>
     </div>
-  </PageShell>
+  </div>
 );
 
 export default AboutPage;

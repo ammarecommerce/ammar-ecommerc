@@ -27,7 +27,7 @@ export default function ITIN({ setPage }) {
   ];
 
   return (
-    <div className="py-12 ae-root">
+    <div className="max-w-5xl mx-auto px-2 pt-6 pb-6">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* HERO SECTION */}
@@ -160,7 +160,7 @@ export default function ITIN({ setPage }) {
                 className="ae-btn-primary font-bold w-full py-3.5 rounded-full transition-all duration-300 shadow-md hover:scale-105 inline-flex items-center justify-center gap-2 text-sm cursor-pointer"
               >
                 <MessageCircle size={18} />
-                Start ITIN Application
+                Start ITIN
               </a>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function ITIN({ setPage }) {
               rel="noopener noreferrer"
               className="ae-btn-primary font-bold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg hover:scale-105 inline-flex items-center gap-2 cursor-pointer"
             >
-              Apply Now on WhatsApp <ArrowRight size={18} />
+              Apply Now on WhatsApp <ArrowRight size={40} />
             </a>
           </div>
         </FadeIn>

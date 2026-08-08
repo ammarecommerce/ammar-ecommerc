@@ -9,7 +9,7 @@ import FadeIn from "../components/FadeIn";
 /* ------------------------------------------------------------------ */
 const ServicesPage = ({ setPage }) => {
   return (
-    <PageShell>
+    <div className="max-w-5xl mx-auto px-6 pt-6 pb-6">
       <FadeIn direction="up" delay={0.1}>
         <SectionEyebrow>Our Services</SectionEyebrow>
 
@@ -62,7 +62,7 @@ const ServicesPage = ({ setPage }) => {
           </PrimaryButton>
         </div>
       </FadeIn>
-    </PageShell>
+    </div>
   );
 };
 

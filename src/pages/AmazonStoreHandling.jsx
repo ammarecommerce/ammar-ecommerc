@@ -24,7 +24,7 @@ export default function AmazonStoreHandling({ setPage }) {
   ];
 
   return (
-    <div className="py-12 ae-root">
+    <div className="max-w-5xl mx-auto px-2 pt-6 pb-6">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* HERO SECTION */}

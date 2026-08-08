@@ -7,7 +7,7 @@ import { SOCIAL_LINKS } from "../data/constants";
 /* ------------------------------------------------------------------ */
 const Footer = ({ setPage }) => (
   <footer className="ae-bg-navy text-white mt-6">
-    <div className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+    <div className="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-4 gap-6">
       <div>
         <button onClick={() => setPage("home")} className="flex items-center gap-3 mb-4">
           <img

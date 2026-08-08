@@ -31,7 +31,7 @@ const LLCPage = ({ setPage }) => {
   ];
 
   return (
-    <PageShell>
+    <div className="max-w-5xl mx-auto px-6 pt-6 pb-6">
       
       {/* ============================================================ */}
       {/* 3 PLANS                                                      */}
@@ -69,7 +69,7 @@ const LLCPage = ({ setPage }) => {
       {/* ============================================================ */}
 
       <FadeIn direction="up" delay={0.3}>
-        <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border ae-border-line mb-16">
+        <div className="bg-white rounded-2xl p-4 md:p-6 shadow-sm border ae-border-line mb-6">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             
             {/* REQUIREMENTS */}
@@ -335,7 +335,7 @@ const LLCPage = ({ setPage }) => {
         </div>
       </FadeIn>
 
-    </PageShell>
+    </div>
   );
 };
 

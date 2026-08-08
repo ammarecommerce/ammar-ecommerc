@@ -67,7 +67,7 @@ export const SERVICES = [
     icon: ShoppingCart, 
     title: "Amazon Account Creation", 
     desc: "New Amazon seller account setup and verification, done right the first time.",
-    pageKey: "amazon-account" // <-- Ye line add karein
+    pageKey: "store-creation" // <-- Yeh badal diya hai ("amazon-account" ki jagah "store-creation")
   },
   { 
     icon: Store, 

@@ -31,7 +31,7 @@ export default function TaxFiling({ setPage }) {
   ];
 
   return (
-    <div className="py-12 ae-root">
+    <div className="max-w-5xl mx-auto px-2 pt-6 pb-6">
       <div className="max-w-5xl mx-auto px-6">
         
         {/* HERO SECTION */}
@@ -210,7 +210,7 @@ export default function TaxFiling({ setPage }) {
               rel="noopener noreferrer"
               className="ae-btn-primary font-bold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg hover:scale-105 inline-flex items-center gap-2 cursor-pointer"
             >
-              Contact Tax Consultant <ArrowRight size={18} />
+              Contact Tax Consultant <ArrowRight size={40} />
             </a>
           </div>
         </FadeIn>

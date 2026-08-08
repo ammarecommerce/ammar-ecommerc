@@ -9,7 +9,7 @@ import FadeIn from "../components/FadeIn";
 /*  LTD PAGE                                                          */
 /* ------------------------------------------------------------------ */
 const LTDPage = ({ setPage }) => (
-  <PageShell>
+  <div className="max-w-5xl mx-auto px-6 pt-6 pb-6">
     <FadeIn direction="up" delay={0.1}>
       <SectionEyebrow>UK Company Formation</SectionEyebrow>
       <h1 className="ae-display text-4xl mb-4">LTD Formation Packages</h1>
@@ -52,7 +52,7 @@ const LTDPage = ({ setPage }) => (
         </div>
       </div>
     </FadeIn>
-  </PageShell>
+  </div>
 );
 
 export default LTDPage;

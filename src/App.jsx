@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BrandStyles from "./styles/BrandStyles";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
@@ -14,20 +15,22 @@ import BankSetup from "./pages/BankSetup";
 import ITIN from "./pages/ITIN";
 import TaxFiling from "./pages/TaxFiling";
 import WebsiteDesign from "./pages/WebsiteDesign";
+import AmazonStoreCreation from "./pages/AmazonStoreCreation";
 
 /* ------------------------------------------------------------------ */
-/* APP ROOT                                                            */
+/* APP ROOT                                                           */
 /* ------------------------------------------------------------------ */
 
 export default function App() {
 
   // Get current page from URL when website loads
- const getPageFromURL = () => {
+  const getPageFromURL = () => {
     const path = window.location.pathname;
 
     // Specific Naye Pages Pehle Check Hon
     if (path === "/amazon-course") return "amazon-course";
     if (path === "/store-handling") return "store-handling";
+    if (path === "/store-creation") return "store-creation";
     if (path === "/bank-setup") return "bank-setup";
     if (path === "/itin") return "itin";
     if (path === "/tax-filing") return "tax-filing";
@@ -46,7 +49,7 @@ export default function App() {
   const [page, setPageState] = useState(getPageFromURL);
 
 
- // Change page + update URL (With Refresh / Scroll-to-Top behavior)
+  // Change page + update URL (With Refresh / Scroll-to-Top behavior)
   const setPage = (newPage) => {
     // Check karein ke kya user usi page par dobara click kar raha hai
     if (page === newPage) {
@@ -67,6 +70,7 @@ export default function App() {
       contact: "/contact",
       "amazon-course": "/amazon-course",
       "store-handling": "/store-handling",
+      "store-creation": "/store-creation",
       "bank-setup": "/bank-setup",
       itin: "/itin",
       "tax-filing": "/tax-filing",
@@ -146,6 +150,7 @@ export default function App() {
     ),
     "amazon-course": <AmazonCourse setPage={setPage} />,
     "store-handling": <AmazonStoreHandling setPage={setPage} />,
+    "store-creation": <AmazonStoreCreation setPage={setPage} />,
     "bank-setup": <BankSetup setPage={setPage} />,
     itin: <ITIN setPage={setPage} />,
     "tax-filing": <TaxFiling setPage={setPage} />,
@@ -155,7 +160,7 @@ export default function App() {
 
 
   return (
-    <div className="ae-root">
+    <div className="ae-root min-h-screen relative">
 
       <BrandStyles />
 
@@ -171,6 +176,9 @@ export default function App() {
       <Footer
         setPage={setPage}
       />
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton />
 
     </div>
   );

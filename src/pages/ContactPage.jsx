@@ -19,7 +19,7 @@ const ContactPage = () => {
   )}`;
 
   return (
-    <PageShell>
+    <div className="max-w-5xl mx-auto px-6 pt-6 pb-6">
       <FadeIn direction="up" delay={0.1}>
         <SectionEyebrow>Get In Touch</SectionEyebrow>
         <h1 className="ae-display text-4xl mb-4">Let's start your business</h1>
@@ -156,7 +156,7 @@ const ContactPage = () => {
           </FadeIn>
         </div>
       </div>
-    </PageShell>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { NAV_ITEMS } from "../data/constants";
 import { PrimaryButton } from "./UI";
@@ -9,6 +9,11 @@ import { PrimaryButton } from "./UI";
 
 const NavBar = ({ page, setPage }) => {
   const [open, setOpen] = useState(false);
+
+  // Jab bhi 'page' ki value change ho (kahin se bhi), Mobile Menu auto-close ho jaye
+  useEffect(() => {
+    setOpen(false);
+  }, [page]);
 
   const goToPage = (pageId) => {
     setPage(pageId);
@@ -26,7 +31,8 @@ const NavBar = ({ page, setPage }) => {
           href="https://chat.whatsapp.com/LblCy5nt4Fd9Omg39aViqm" 
           target="_blank"
           rel="noopener noreferrer"
-          className="ae-btn-primary font-bold px-4 py-1.5 rounded-full transition-all duration-300 shadow-md hover:scale-105 inline-flex items-center gap-1.5 text-xs md:text-sm cursor-pointer"        >
+          className="ae-btn-primary font-bold px-4 py-1.5 rounded-full transition-all duration-300 shadow-md hover:scale-105 inline-flex items-center gap-1.5 text-xs md:text-sm cursor-pointer"
+        >
           Join Group
         </a>
       </div>
